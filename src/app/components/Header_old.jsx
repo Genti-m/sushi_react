@@ -58,31 +58,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        <ul className="header__menu" data-aos="fade-down">
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#food">Food</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          <li>
-            <img src={searchIcon} alt="search" />
-          </li>
-        </ul>
-
-        <ul className="header__menu-mobile" data-aos="fade-down">
-          <li>
-            <img src={menuIcon} alt="menu" />
-          </li>
-        </ul>
-      </nav>
+      <nav>{/* Any other content in the header */}</nav>
     </header>
   );
 };
