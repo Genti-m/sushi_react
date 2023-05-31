@@ -1,0 +1,49 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__left {
+    flex: 1;
+    background: $red;
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__logo {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $red;
+    flex: 1;
+
+    h4 {
+      font-weight: $font-weight-bold;
+      padding-left: 3rem;
+      color: $white;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: $screenWidth;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex: 2;
+  }
+
+  &__item {
+    padding: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}

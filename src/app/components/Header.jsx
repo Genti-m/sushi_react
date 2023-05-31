@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import searchIcon from '../../assets/svg/search.svg';
+import menuIcon from '../../assets/svg/menu.svg';
+
 // Import the _header.scss file
 import '../../styles/_header.scss';
 

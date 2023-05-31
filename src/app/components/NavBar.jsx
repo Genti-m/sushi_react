@@ -1,38 +1,37 @@
 import React from "react";
+import searchIcon from '../../assets/svg/search.svg';
+import menuIcon from '../../assets/svg/menu.svg';
+import FormattedMessage from './FormattedMessage';
 
 const NavBar = () => {
   return (
-      <nav className="header__nav">
-        <div className="header__logo">
-          <h4 data-aos="fade-down">Jungle Sushi</h4>
-          <div className="header__logo-overlay"></div>
+    <div className="navbar">
+      <div className="navbar__left"/>
+      <div className="navbar__content">
+        <div className="navbar__logo">
+          <h4><FormattedMessage id='title' /></h4>
         </div>
-
-        <ul className="header__menu" data-aos="fade-down">
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#food">Food</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          {/* <li>
-            <img src="assets/search.svg" alt="search" />
-          </li> */}
-        </ul>
-
-        <ul className="header__menu-mobile" data-aos="fade-down">
-          <li>
-            <img src="assets/menu.svg" alt="menu" />
-          </li>
-        </ul>
-      </nav>
-      );
+        <div className="navbar__list">
+          <div className="navbar__item">
+            <FormattedMessage id='navbar.menu' />
+          </div>
+          <div className="navbar__item">
+            <FormattedMessage id='navbar.food' />
+          </div>
+          <div className="navbar__item">
+            <FormattedMessage id='navbar.services' />
+          </div>
+          <div className="navbar__item">
+            <FormattedMessage id='navbar.about' />
+          </div>
+          <div className="navbar__item">
+            <img src={searchIcon} alt="search" />
+          </div>
+        </div>
+      </div>
+      <div className="navbar__right"/>
+    </div>
+  )
 };
 
 export default NavBar;
